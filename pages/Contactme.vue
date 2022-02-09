@@ -2,6 +2,7 @@
 	<div>
 		<h1>Contact</h1>
 		<el-form
+			netlify
 			:model="contactForm"
 			ref="contactForm"
 			name="contactForm"
@@ -86,6 +87,7 @@ export default {
 							axiosConfig
 						)
 						.then(_ => this.$router.push('/contactthanks'))
+						.catch(error => alert(error))
 				} else {
 					alert('Form not filled properly!')
 					return false
