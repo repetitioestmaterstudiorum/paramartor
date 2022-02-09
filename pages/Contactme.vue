@@ -6,6 +6,7 @@
 			ref="contactForm"
 			name="contactForm"
 			method="post"
+			action="/contactthanks"
 			data-netlify="true"
 			data-netlify-honeypot="bot-field"
 		>
@@ -50,6 +51,7 @@
 </template>
 <script>
 import axios from 'axios'
+import cloneDeep from 'lodash.clonedeep'
 
 export default {
 	data() {
@@ -73,20 +75,22 @@ export default {
 					const axiosConfig = {
 						header: { 'Content-Type': 'application/x-www-form-urlencoded' },
 					}
-					axios.post(
-						'/',
-						this.encode({
-							'form-name': 'contactForm',
-							...this.contactForm,
-						}),
-						axiosConfig
-					)
+					console.log('this.contactForm :>> ', cloneDeep(this.contactForm))
+					axios
+						.post(
+							'/',
+							this.encode({
+								'form-name': formName,
+								...this.contactForm,
+							}),
+							axiosConfig
+						)
+						.then(_ => this.$router.push('/contactthanks'))
 				} else {
 					alert('Form not filled properly!')
 					return false
 				}
 			})
-			console.log('form saved!')
 		},
 	},
 }
