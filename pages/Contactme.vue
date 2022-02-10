@@ -6,7 +6,7 @@
 			ref="contactForm"
 			name="contactForm"
 			method="post"
-			action="/contactthanks"
+			action="https://formspree.io/f/mbjwgvqo"
 			data-netlify="true"
 			data-netlify-honeypot="bot-field"
 		>
@@ -51,7 +51,6 @@
 </template>
 <script>
 import axios from 'axios'
-import cloneDeep from 'lodash.clonedeep'
 
 export default {
 	data() {
@@ -75,7 +74,6 @@ export default {
 					const axiosConfig = {
 						header: { 'Content-Type': 'application/x-www-form-urlencoded' },
 					}
-					console.log('this.contactForm :>> ', cloneDeep(this.contactForm))
 					axios
 						.post(
 							'/',
