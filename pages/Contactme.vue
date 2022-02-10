@@ -5,8 +5,6 @@
 			:model="contactForm"
 			ref="contactForm"
 			name="contactForm"
-			method="post"
-			data-netlify="true"
 			data-netlify-honeypot="bot-field"
 		>
 			<input type="hidden" name="form-name" value="contactForm" />
