@@ -6,7 +6,6 @@
 			ref="contactForm"
 			name="contactForm"
 			method="post"
-			action="https://formspree.io/f/mbjwgvqo"
 			data-netlify="true"
 			data-netlify-honeypot="bot-field"
 		>
@@ -76,7 +75,7 @@ export default {
 					}
 					axios
 						.post(
-							'/',
+							'https://formspree.io/f/mbjwgvqo',
 							this.encode({
 								'form-name': formName,
 								...this.contactForm,
