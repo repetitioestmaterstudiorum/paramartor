@@ -2,7 +2,6 @@
 	<div>
 		<h1>Contact</h1>
 		<el-form
-			netlify
 			:model="contactForm"
 			ref="contactForm"
 			name="contactForm"
