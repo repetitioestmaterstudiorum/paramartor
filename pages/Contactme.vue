@@ -73,7 +73,7 @@ export default {
 					}
 					axios
 						.post(
-							process.env.FORM_URL,
+							'https://formspree.io/f/mbjwgvqo',
 							this.encode({
 								'form-name': formName,
 								...this.contactForm,
