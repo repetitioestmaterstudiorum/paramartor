@@ -10,7 +10,7 @@ A website that enables you to creatre artistic images by adjusting parameters us
 
 ## purpose
 
-The CS50x course finishes with a final project that leaves much room for creativity. Since I am interested in the intersaction of art and programming, I decided to explore this realm.
+The CS50x course finishes with a final project that leaves much room for creativity. Since I am interested in the intersection of art and programming, I decided to explore this realm.
 
 ## tech
 
