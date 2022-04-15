@@ -1,6 +1,6 @@
 # paramartor
 
-#### description:
+## description:
 
 check it out live on: https://tinyurl.com/paramartor
 
@@ -8,7 +8,9 @@ check it out live on: https://tinyurl.com/paramartor
 
 A website that enables you to creatre artistic images by adjusting parameters used as variables by a prepared piece of code that generates the image.
 
-## purpose
+Inspired by https://natureofcode.com/.
+
+## CS50x
 
 The CS50x course finishes with a final project that leaves much room for creativity. Since I am interested in the intersection of art and programming, I decided to explore this realm.
 
