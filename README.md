@@ -1,12 +1,8 @@
 # paramartor
 
-#### video demo:
-
-tbd
-
 #### description:
 
-check it out live on: tbd
+check it out live on: https://tinyurl.com/paramartor
 
 "paramartor" is an invented word based on the idea of parametrized visual art generation.
 
