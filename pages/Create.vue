@@ -89,6 +89,7 @@ export default {
 		}
 	},
 	async mounted() {
+		// do this only on the client (not on the server)
 		if (process.client) {
 			// import the library and store it in this component's instance
 			const { default: P5 } = await import('p5')
@@ -100,7 +101,7 @@ export default {
 			// start drawing
 			this.draw()
 
-			// move canvas in dom, remove loading indicator
+			// move canvas into DOM, remove loading indicator
 			this.canvasLifecycle()
 		}
 	},
