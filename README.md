@@ -2,7 +2,7 @@
 
 ## description:
 
-check it out live on: https://tinyurl.com/paramartor
+check it out live on: [paramartor.netlify.app](https://paramartor.netlify.app/)
 
 "paramartor" is an invented word based on the idea of parametrized visual art generation.
 
